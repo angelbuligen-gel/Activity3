@@ -640,21 +640,16 @@
         <h1>
 
             <span class="main">
-                MY STUDENT
+                Welcome Student
             </span>
 
             <br>
-
-            <span class="outline">
-                HUB
-            </span>
 
         </h1>
 
 
         <p>
-            Welcome to My Student Hub, your simple and organized
-            space for managing student information and activities.
+            Mabuhay Mahaltana!
         </p>
 
 

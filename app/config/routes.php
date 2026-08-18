@@ -45,8 +45,12 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 /** @var object $router **/
 
 $router->get('/', 'Welcome::index');
+(function () {
+    require APP_DIR . 'config/middleware.php';
+    get_config($config);
+})();
 
 $router->get('/student', 'StudentController::index');
 
 $router->get('/student/profile', 'StudentController::profile')
-       ->middleware('students');
+       ->middleware('student_access');
