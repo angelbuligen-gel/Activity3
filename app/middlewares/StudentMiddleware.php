@@ -6,7 +6,7 @@
     {
         public function handle(Closure $next)
         {
-            session_start();
+           
             if (!isset($_SESSION['student_access']) || $_SESSION['student_access'] !== true) {
                 echo "You can't access this page.";
                 exit;
