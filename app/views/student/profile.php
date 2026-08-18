@@ -555,7 +555,7 @@
                 <div>
 
                     <h2>
-                       <?= $name ?>
+                       <?= $student['name'] ?>
                     </h2>
 
                     <p>
@@ -578,7 +578,7 @@
                     </div>
 
                     <div class="info-value">
-                        <?= $student_id ?>
+                        <?= $student['student_id'] ?>
                     </div>
 
                 </div>
@@ -591,7 +591,7 @@
                     </div>
 
                     <div class="info-value">
-                        <?= $name ?>
+                        <?= $student['name'] ?>
                     </div>
 
                 </div>
@@ -604,7 +604,7 @@
                     </div>
 
                     <div class="info-value">
-                        <?= $course ?>
+                        <?= $student['course'] ?>
                     </div>
 
                 </div>
@@ -617,7 +617,7 @@
                     </div>
 
                     <div class="info-value">
-                        <?= $year ?>
+                        <?= $student['year'] ?>
                     </div>
 
                 </div>
@@ -630,7 +630,7 @@
                     </div>
 
                     <div class="info-value">
-                        <?= $section ?>
+                        <?= $student['section'] ?>
                     </div>
 
                 </div>
@@ -643,7 +643,7 @@
                     </div>
 
                     <div class="info-value">
-                        <?= $email ?>
+                        <?= $student['email'] ?>
                     </div>
 
                 </div>

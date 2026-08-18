@@ -6,7 +6,7 @@ class StudentController extends Controller
 {
     public function index()
     {
-        
+        session_start();
         $_SESSION['student_access'] = true;
 
         $this->call->view('student/index');
@@ -23,6 +23,8 @@ class StudentController extends Controller
             'email' => 'angelbuligenada@gmail.com'
         ];
 
-        $this->call->view('student/profile', $student);
+       $this->call->view('student/profile', [
+        'student' => $student
+    ]);
     }
 }
