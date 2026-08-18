@@ -1,6 +1,10 @@
 <?php
 defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 require_once APP_DIR . 'middlewares/StudentMiddleware.php';
 /**
  * ------------------------------------------------------------------
