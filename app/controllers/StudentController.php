@@ -6,7 +6,7 @@ class StudentController extends Controller
 {
     public function index()
     {
-        session_start();
+        
         $_SESSION['student_access'] = true;
 
         $this->call->view('student/index');
